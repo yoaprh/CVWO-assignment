@@ -14,12 +14,12 @@ function Search() {
     setQuery(target.value)
   }
 
-  const removeTag = ({ tag }) => {
-    var array = [tags];
-    var index = array.indexOf(tag.target.value)
+  const removeTag = tag => {
+    var array = tags;
+    var index = array.indexOf(tag.target.innerText)
     if (index !== -1) {
       array.splice(index, 1);
-      setTags({ tags: array });
+      setTags(array);
     }
   }
 
@@ -29,10 +29,12 @@ function Search() {
     }
   }
 
+
+
   const Tag = ({ query }) => <button onClick={removeTag}> <li>{query}</li> </button>
   return (
     <div>
-      <input type="text" id="searchBox" onChange={updateQuery} onKeyPress={keyPressed} placeholder="Filter tasks..."></input>
+      <input type="text" id="searchBox" onChange={updateQuery} onKeyPress={keyPressed} placeholder="Filter tasks, separate tags with commas..."></input>
       <ul id="tagsList" className="previousSearch">
         {tags.map((query, i) => (
           <Tag
@@ -40,7 +42,6 @@ function Search() {
             key={query + i}
           />
 
-          // <button onClick={(tag) => removeTag(tag)}> <li key={query + i}> {query}</li> </button>
         ))}
       </ul>
     </div>
