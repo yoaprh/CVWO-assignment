@@ -44,7 +44,7 @@ function Search() {
 
         ))}
       </ul>
-    </div>
+    </div >
   );
 }
 

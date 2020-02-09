@@ -9,7 +9,8 @@ class Main extends React.Component {
     return (
       <React.Fragment>
         <h1>Tasks</h1>
-        <Search /> <button onClick={this.SearchTags}>Filter</button>
+        <Search />
+        <button id="filter" onClick={this.SearchTags}>Filter</button>
         <div className="tasks">
           <style dangerouslySetInnerHTML={{
             __html: `

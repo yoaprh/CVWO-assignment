@@ -61,6 +61,7 @@ input:focus {
 }
 ul #previousSearch {
 	font-family: "Century Gothic", "Calibri", "Arial", "Sans-Serif";
+	display:block;
 	text-decoration: none; 
 	list-style:none;
 }
@@ -74,7 +75,7 @@ ul #previousSearch {
 	width: 75%;
 	padding: 12px 20px 12px 40px;  
 }
-#ListofTasks li h2 {
+#ListofTasks li h2 {    
 	background-color: #F2A5E8;
 	margin-top: -1px;
 	text-decoration: none;
@@ -119,4 +120,5 @@ ul #previousSearch {
 #searchBox:focus {
 	outline:none;
 }
-  
+
+     

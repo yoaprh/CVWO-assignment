@@ -48,10 +48,18 @@ h2 {
 	font-weight: 500;
 	display: block; 
 }
-ul {
+ul#tagsList {
+	position:fixed;
+	top:5%;
+	left:5%;
 	font-family: "Century Gothic", "Calibri", "Arial", "Sans-Serif";
+	display: block;
 	text-decoration: none; 
 	list-style:none;
+}
+
+ul#tagsList li {
+	display:block;
 }
 
 #ListofTasks {        
@@ -144,4 +152,6 @@ button:hover {
 button:focus {
 	outline:none;
 }
-
+button#filter {
+	position:relative;
+}

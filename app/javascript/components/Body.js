@@ -90,15 +90,6 @@ class Body extends React.Component {
     return (
       <div>
         <NewTask handleFormSubmit={this.handleFormSubmit} />
-        {/* <NewTask
-          togglePopup={this.togglePopup.bind(this)}
-        />
-        {this.state.showPopup ?
-          <NewPopup
-            closePopup={this.togglePopup.bind(this)}
-          />
-          : null
-        } */}
         <TaskList tasks={this.state.tasks} handleDelete={this.handleDelete} handleUpdate={this.handleUpdate} />
       </div>
     )
