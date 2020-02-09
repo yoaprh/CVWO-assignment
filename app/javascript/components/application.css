@@ -1,0 +1,122 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree 
+ *= require_self 
+*/
+body {
+	background-color: #CCDCFD;
+}
+
+h1 {
+	font-family: "Century Gothic", "Calibri", "Arial", "Sans-Serif";
+	font-size: 35px;
+	color: #D099E2;
+	text-align: center;
+}
+
+p {
+	font-family: "Century Gothic", "Calibri", "Arial", "Sans-Serif";
+	font-size: 14px;
+	color: #D099E2;
+	text-align: left;
+}
+
+a {
+	font-family: "Century Gothic", "Calibri", "Arial", "Sans-Serif";
+	font-size: 14px;
+	color: #D099E2;
+	text-align: left;
+}
+h2 {
+	font-family: "Century Gothic", "Calibri", "Arial", "Sans-Serif";
+  	margin-top: -1px; 
+	text-decoration: none; 
+	text-align: left; 
+	padding: 12px 20px 12px 40px;  
+  	font-size: 18px; 
+	color: rgb(98, 105, 233); 
+	font-weight: 500;
+	display: block; 
+}
+input {
+	padding:15px 15px 15px 15px;
+	height:140%;
+	border-radius: 25px;
+	background: rgb(172, 213, 243);
+	border:1px solid rgb(172, 213, 243);
+
+}
+input:focus {
+	outline:none;
+}
+ul #previousSearch {
+	font-family: "Century Gothic", "Calibri", "Arial", "Sans-Serif";
+	text-decoration: none; 
+	list-style:none;
+}
+#ListofTasks {
+	font-family: "Century Gothic", "Calibri", "Arial", "Sans-Serif";
+	text-decoration: none; 
+	position: absolute;
+	list-style:none;
+	top: 22%;
+	left: 7%;
+	width: 75%;
+	padding: 12px 20px 12px 40px;  
+}
+#ListofTasks li h2 {
+	background-color: #F2A5E8;
+	margin-top: -1px;
+	text-decoration: none;
+	text-align: left;
+	padding: 12px 20px 12px 40px;
+	font-size: 18px;
+	color: rgb(98, 105, 233);
+	font-weight: 500;
+	display: block;
+}
+
+#ListofTasks li h2:hover {
+	background-color: #E8BFFB; 
+}
+
+#ListofTasks li a {
+	background-color: #F2A5E8;
+	margin-top: -1px;
+	text-decoration: none;
+	text-align: left;
+	font-size: 14px;
+	color: rgba(96, 98, 138, 0.336);
+	font-weight: 500;
+	border-bottom: #D099E2;
+}
+
+#searchBox {
+	position: absolute;
+	background-color: #CCDCFD; 
+	border:none;  
+	width: 75%;
+	font-size: 16px;
+	padding: 12px 20px 12px 40px;
+	margin-bottom: 12px;
+	top: 75%; 
+	left: 15%;        
+	font-family: "Century Gothic", "Calibri", "Arial", "Sans-Serif";
+	color:black;
+
+}
+
+#searchBox:focus {
+	outline:none;
+}
+  
